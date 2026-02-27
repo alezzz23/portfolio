@@ -24,12 +24,12 @@
 
             <nav class="nav-desktop">
                 <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                    <li><a href="#stack" class="nav-link">Stack</a></li>
-                    <li><a href="#education" class="nav-link">Estudios</a></li>
-                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                    <li><a href="#work" class="nav-link">Experiencia</a></li>
-                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
+                    <li><a href="#stack" class="nav-link" data-i18n="nav.stack">Stack</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav.education">Estudios</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+                    <li><a href="#work" class="nav-link" data-i18n="nav.work">Experiencia</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -52,6 +52,9 @@
                             d="M15.1048 8.864L15.1152 8.85254M10.4173 17.7077C10.9699 17.7077 11.4998 17.4883 11.8905 17.0976C12.2812 16.7069 12.5007 16.1769 12.5007 15.6244C12.5007 15.0719 12.2812 14.542 11.8905 14.1513C11.4998 13.7606 10.9699 13.5411 10.4173 13.5411C9.86478 13.5411 9.33488 13.7606 8.94418 14.1513C8.55348 14.542 8.33398 15.0719 8.33398 15.6244C8.33398 16.1769 8.55348 16.7069 8.94418 17.0976C9.33488 17.4883 9.86478 17.7077 10.4173 17.7077Z"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
+                </button>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Toggle Language">
+                    <span id="current-lang">ES</span>
                 </button>
                 <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
                     <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24"
@@ -85,14 +88,14 @@
                 </svg>
                 Sobre mí
             </a>
-            <a href="#stack" class="mobile-nav-link">
+            <a href="#stack" class="mobile-nav-link" data-i18n="nav.stack">
                 <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M20 7l-8-4-8 4 8 4 8-4zM4 7v10l8 4 8-4V7" />
                 </svg>
                 Stack
             </a>
-            <a href="#education" class="mobile-nav-link">
+            <a href="#education" class="mobile-nav-link" data-i18n="nav.education">
                 <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -101,7 +104,7 @@
                 </svg>
                 Estudios
             </a>
-            <a href="#projects" class="mobile-nav-link">
+            <a href="#projects" class="mobile-nav-link" data-i18n="nav.projects">
                 <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
@@ -109,14 +112,14 @@
                 </svg>
                 Proyectos
             </a>
-            <a href="#work" class="mobile-nav-link">
+            <a href="#work" class="mobile-nav-link" data-i18n="nav.work">
                 <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M5 7h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2z" />
                 </svg>
                 Experiencia
             </a>
-            <a href="#contact" class="mobile-nav-link">
+            <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">
                 <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -132,8 +135,8 @@
         <section class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Desarrollador Fullstack y Ciberseguridad</h1>
-                    <p class="hero-description">
+                    <h1 class="hero-title" data-i18n="hero.title">Desarrollador Fullstack y Ciberseguridad</h1>
+                    <p class="hero-description" data-i18n="hero.description">
                         Apasionado por construir soluciones y contribuir a comunidades open source.
                         Especializado en desarrollo web moderno con tecnologías de vanguardia.
                     </p>
@@ -165,7 +168,7 @@
                                     <path
                                         d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z" />
                                 </svg>
-                                Descargar CV
+                                <span data-i18n="hero.downloadCV">Descargar CV</span>
                             </a>
                         </li>
                     </ul>
@@ -209,29 +212,29 @@
         </section>
 
         <section id="about" class="content-section">
-            <h2 class="section-title">Sobre mí</h2>
-            <p class="section-lead">Soy Moises Rodriguez. Me gusta construir productos web, automatizar procesos y seguir aprendiendo tecnologías modernas.</p>
+            <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+            <p class="section-lead" data-i18n="about.lead">Soy Moises Rodriguez. Me gusta construir productos web, automatizar procesos y seguir aprendiendo tecnologías modernas.</p>
             <div class="about-grid">
                 </div>
                 <div class="about-text">
-                    <p class="about-paragraph">
+                    <p class="about-paragraph" data-i18n="about.paragraph">
                         Trabajo en desarrollo fullstack, con interés en ciberseguridad y buenas prácticas.
                         Me enfoco en crear interfaces limpias, código mantenible y soluciones que escalen.
                     </p>
                     <div class="highlights">
                         <div class="highlight-card">
-                            <h3 class="highlight-title">Seguridad</h3>
-                            <p class="highlight-text">
+                            <h3 class="highlight-title" data-i18n="about.security.title">Seguridad</h3>
+                            <p class="highlight-text" data-i18n="about.security.text">
                                 Practico buenas prácticas de seguridad, como HTTPS, autenticación y autorización.
                             </p>
                         </div>
                         <div class="highlight-card">
-                            <h3 class="highlight-title">Enfoque</h3>
-                            <p class="highlight-text">Calidad, performance, experiencia de usuario</p>
+                            <h3 class="highlight-title" data-i18n="about.focus.title">Enfoque</h3>
+                            <p class="highlight-text" data-i18n="about.focus.text">Calidad, performance, experiencia de usuario</p>
                         </div>
                         <div class="highlight-card">
-                            <h3 class="highlight-title">Intereses</h3>
-                            <p class="highlight-text">Seguridad, automatización, Open Source</p>
+                            <h3 class="highlight-title" data-i18n="about.interests.title">Intereses</h3>
+                            <p class="highlight-text" data-i18n="about.interests.text">Seguridad, automatización, Open Source</p>
                         </div>
                     </div>
                 </div>
@@ -239,8 +242,8 @@
         </section>
 
         <section id="stack" class="content-section">
-            <h2 class="section-title">Stack</h2>
-            <p class="section-lead">Tecnologías con las que trabajo.</p>
+            <h2 class="section-title" data-i18n="stack.title">Stack</h2>
+            <p class="section-lead" data-i18n="stack.lead">Tecnologías con las que trabajo.</p>
             <div class="stack-grid">
                 <!-- Frontend -->
                 <div class="stack-item">
@@ -351,8 +354,8 @@
 
         <!-- Education Section -->
         <section id="education" class="content-section">
-            <h2 class="section-title">Estudios</h2>
-            <p class="section-lead">Mi formación académica y certificaciones relevantes en el área de tecnología.</p>
+            <h2 class="section-title" data-i18n="education.title">Estudios</h2>
+            <p class="section-lead" data-i18n="education.lead">Mi formación académica y certificaciones relevantes en el área de tecnología.</p>
             <div class="education-timeline">
                 <article class="education-item">
                     <div class="education-dot" aria-hidden="true"></div>
@@ -362,8 +365,8 @@
                                 <img src="./images/unexca-logo.png" alt="Universidad" class="education-logo" loading="lazy">
                             </div>
                             <div class="education-heading">
-                                <h3 class="education-institution">Universidad Experimental Gran Caracas</h3>
-                                <p class="education-degree">Ingeniería Informática</p>
+                                <h3 class="education-institution" data-i18n="education.university.name">Universidad Experimental Gran Caracas</h3>
+                                <p class="education-degree" data-i18n="education.university.degree">Ingeniería Informática</p>
                                 <div class="education-meta">
                                     <span class="education-location">La Guaira, Venezuela</span>
                                     <span class="education-sep">•</span>
@@ -372,8 +375,8 @@
                             </div>
                         </header>
                         <ul class="education-bullets">
-                            <li>Especialización en desarrollo de software y arquitectura de sistemas</li>
-                            <li>Proyectos destacados en inteligencia artificial y machine learning</li>
+                            <li data-i18n="education.university.bullet1">Especialización en desarrollo de software y arquitectura de sistemas</li>
+                            <li data-i18n="education.university.bullet2">Proyectos destacados en inteligencia artificial y machine learning</li>
                         </ul>
                     </div>
                 </article>
@@ -386,8 +389,8 @@
                                 <img src="./images/Conviasa.png" alt="Conviasa" class="education-logo" loading="lazy">
                             </div>
                             <div class="education-heading">
-                                <h3 class="education-institution">Certificación en Ciberseguridad</h3>
-                                <p class="education-degree">Seguridad Informática y Redes</p>
+                                <h3 class="education-institution" data-i18n="education.cert.name">Certificación en Ciberseguridad</h3>
+                                <p class="education-degree" data-i18n="education.cert.degree">Seguridad Informática y Redes</p>
                                 <div class="education-meta">
                                     <span class="education-location">La Guaira, Venezuela</span>
                                     <span class="education-sep">•</span>
@@ -396,9 +399,9 @@
                             </div>
                         </header>
                         <ul class="education-bullets">
-                            <li>Análisis de vulnerabilidades y evaluación de riesgos en sistemas</li>
-                            <li>Implementación de medidas de seguridad en redes y aplicaciones web</li>
-                            <li>Gestión de incidentes y respuesta a ataques cibernéticos</li>
+                            <li data-i18n="education.cert.bullet1">Análisis de vulnerabilidades y evaluación de riesgos en sistemas</li>
+                            <li data-i18n="education.cert.bullet2">Implementación de medidas de seguridad en redes y aplicaciones web</li>
+                            <li data-i18n="education.cert.bullet3">Gestión de incidentes y respuesta a ataques cibernéticos</li>
                         </ul>
                     </div>
                 </article>
@@ -411,8 +414,8 @@
                                 <img src="./images/liceo-logo.jpg" alt="Liceo" class="education-logo" loading="lazy">
                             </div>
                             <div class="education-heading">
-                                <h3 class="education-institution">Técnico Medio en Informática</h3>
-                                <p class="education-degree">Bachillerato con especialización en Informática</p>
+                                <h3 class="education-institution" data-i18n="education.highschool.name">Técnico Medio en Informática</h3>
+                                <p class="education-degree" data-i18n="education.highschool.degree">Bachillerato con especialización en Informática</p>
                                 <div class="education-meta">
                                     <span class="education-location">La Guaira, Venezuela</span>
                                     <span class="education-sep">•</span>
@@ -421,10 +424,10 @@
                             </div>
                         </header>
                         <ul class="education-bullets">
-                            <li>Desarrollo de sistema web integral para la gestión administrativa del liceo</li>
-                            <li>Creación de página web institucional con diseño responsive</li>
-                            <li>Formación en fundamentos de programación y bases de datos</li>
-                            <li>Introducción a redes informáticas y mantenimiento de equipos</li>
+                            <li data-i18n="education.highschool.bullet1">Desarrollo de sistema web integral para la gestión administrativa del liceo</li>
+                            <li data-i18n="education.highschool.bullet2">Creación de página web institucional con diseño responsive</li>
+                            <li data-i18n="education.highschool.bullet3">Formación en fundamentos de programación y bases de datos</li>
+                            <li data-i18n="education.highschool.bullet4">Introducción a redes informáticas y mantenimiento de equipos</li>
                         </ul>
                     </div>
                 </article>
@@ -433,12 +436,12 @@
         </section>
 
         <section id="projects" class="content-section">
-            <h2 class="section-title">Proyectos</h2>
-            <p class="section-lead">Una selección de proyectos y trabajos recientes.</p>
+            <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+            <p class="section-lead" data-i18n="projects.lead">Una selección de proyectos y trabajos recientes.</p>
             <div class="projects-grid">
                 <article class="project-card">
                     <h3 class="project-title">NeuroTeach</h3>
-                    <p class="project-description">Plataforma innovadora que utiliza affective computing y modelos de lenguaje avanzados para adaptar el contenido educativo según el estado emocional y rendimiento cognitivo.</p>
+                    <p class="project-description" data-i18n="projects.neuroteach.desc">Plataforma innovadora que utiliza affective computing y modelos de lenguaje avanzados para adaptar el contenido educativo según el estado emocional y rendimiento cognitivo.</p>
                     <div class="tech-stack">
                         <ul class="tag-list">
                             <li class="tag">NestJS</li>
@@ -455,13 +458,13 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a class="btn btn-primary" href="#contact">Ver demo</a>
-                        <a class="btn btn-secondary" href="https://github.com/alezzz23/NeuroTeach">Código fuente</a>
+                        <a class="btn btn-primary" href="#demo" data-i18n="projects.viewDemo">Ver demo</a>
+                        <a class="btn btn-secondary" href="https://github.com/alezzz23/NeuroTeach" target="_blank" rel="noopener noreferrer" data-i18n="projects.sourceCode">Código fuente</a>
                     </div>
                 </article>
                 <article class="project-card">
                     <h3 class="project-title">Aula Virtual</h3>
-                    <p class="project-description">Sistema web completo para la gestión educativa que permite administrar estudiantes, profesores, materias, notas, asistencia y actividades académicas de manera eficiente y moderna.</p>
+                    <p class="project-description" data-i18n="projects.aula.desc">Sistema web completo para la gestión educativa que permite administrar estudiantes, profesores, materias, notas, asistencia y actividades académicas de manera eficiente y moderna.</p>
                     
                     <div class="project-details">
                         <div class="tech-stack">
@@ -477,21 +480,21 @@
                     </div>
                     
                     <div class="project-actions">
-                        <a class="btn btn-primary" href="#demo">Ver demo</a>
-                        <a class="btn btn-secondary" href="https://github.com/alezzz23/Aula-Virtual">Ver código</a>
+                        <a class="btn btn-primary" href="#demo" data-i18n="projects.viewDemo">Ver demo</a>
+                        <a class="btn btn-secondary" href="https://github.com/alezzz23/Aula-Virtual" target="_blank" rel="noopener noreferrer" data-i18n="projects.viewCode">Ver código</a>
                     </div>
                 </article>
                 <article class="project-card">
                     <h3 class="project-title">Landing Page UCV</h3>
-                    <p class="project-description">La Jornada Científica 2025 es un evento académico que reúne a investigadores, profesionales y estudiantes para compartir experiencias, resultados de investigación y avances en diversas áreas del conocimiento científico.</p>
+                    <p class="project-description" data-i18n="projects.landing.desc">La Jornada Científica 2025 es un evento académico que reúne a investigadores, profesionales y estudiantes para compartir experiencias, resultados de investigación y avances en diversas áreas del conocimiento científico.</p>
                     <ul class="tag-list">
                         <li class="tag">HTML</li>
                         <li class="tag">CSS</li>
                         <li class="tag">JavaScript</li>
                     </ul>
                     <div class="project-actions">
-                        <a class="btn btn-primary" href="#demo">Ver demo</a>
-                        <a class="btn btn-secondary" href="https://github.com/alezzz23/landing-jornada-2025">Código</a>
+                        <a class="btn btn-primary" href="#demo" data-i18n="projects.viewDemo">Ver demo</a>
+                        <a class="btn btn-secondary" href="https://github.com/alezzz23/landing-jornada-2025" target="_blank" rel="noopener noreferrer" data-i18n="projects.code">Código</a>
                     </div>
                 </article>
             </div>
@@ -499,9 +502,35 @@
 
         <!-- Work Experience Section -->
         <section id="work" class="content-section experience-section">
-            <h2 class="section-title">Experiencia</h2>
-            <p class="section-lead">Resumen de mis roles más recientes.</p>
+            <h2 class="section-title" data-i18n="work.title">Experiencia</h2>
+            <p class="section-lead" data-i18n="work.lead">Resumen de mis roles más recientes.</p>
             <div class="experience-timeline">
+                <article class="experience-item">
+                    <div class="experience-dot" aria-hidden="true"></div>
+                    <div class="experience-card">
+                        <header class="experience-header">
+                            <div class="experience-logo-wrap">
+                                <img src="./images/suptrima.jpg" alt="Superintendencia Municipal de Administración Tributaria de Maturín" class="experience-logo" loading="lazy">
+                            </div>
+                            <div class="experience-heading">
+                                <h3 class="experience-company">Superintendencia Municipal de Administración Tributaria de Maturín</h3>
+                                <p class="experience-role" data-i18n="work.suptrima.role">Desarrollador Web</p>
+                                <div class="experience-meta">
+                                    <span class="experience-remote" data-i18n="work.remote">Remoto</span>
+                                    <span class="experience-sep">•</span>
+                                    <span class="experience-location">Maturín, Venezuela</span>
+                                    <span class="experience-sep">•</span>
+                                    <time class="experience-date" data-i18n="work.suptrima.date">febrero 2026 — Actualidad</time>
+                                </div>
+                            </div>
+                        </header>
+                        <ul class="experience-bullets">
+                            <li data-i18n="work.suptrima.bullet1">Desarrollo de dashboards interactivos para la visualización de datos tributarios y administrativos.</li>
+                            <li data-i18n="work.suptrima.bullet2">Identificación y resolución de bugs críticos en diversos sistemas municipales, asegurando la estabilidad operativa.</li>
+                            <li data-i18n="work.suptrima.bullet3">Implementación de validaciones robustas y medidas de seguridad en formularios y procesos de recolección de datos.</li>
+                        </ul>
+                    </div>
+                </article>
                 <article class="experience-item">
                     <div class="experience-dot" aria-hidden="true"></div>
                     <div class="experience-card">
@@ -509,20 +538,23 @@
                             <div class="experience-logo-wrap">
                                 <img src="./images/Professional-Academy.png " alt="Professional Academy" class="experience-logo" loading="lazy">
                             </div>
+                            
                             <div class="experience-heading">
                                 <h3 class="experience-company">Professional Academy</h3>
-                                <p class="experience-role">Desarrollador Frontend</p>
+                                <p class="experience-role" data-i18n="work.professional.role">Desarrollador Frontend</p>
                                 <div class="experience-meta">
+                                    <span class="experience-remote" data-i18n="work.remote">Remoto</span>
+                                    <span class="experience-sep">•</span>
                                     <span class="experience-location">Guadalajara, México</span>
                                     <span class="experience-sep">•</span>
-                                    <time class="experience-date">Enero 2026 — Actualidad</time>
+                                    <time class="experience-date" data-i18n="work.professional.date">Enero 2026 — febrero 2026</time>
                                 </div>
                             </div>
                         </header>
                         <ul class="experience-bullets">
-                            <li>Desarrollo de interfaces de usuario interactivas y responsivas utilizando React.js y Next.js, mejorando la experiencia de usuario en un 35% según métricas de Google Analytics.</li>
-                            <li>Optimización del rendimiento frontend, logrando reducir el tiempo de carga en un 45% mediante técnicas como code-splitting y lazy loading.</li>
-                            <li>Implementación de pruebas unitarias y de integración con Jest y Testing Library, alcanzando una cobertura del 85% en componentes críticos.</li>
+                            <li data-i18n="work.professional.bullet1">Desarrollo de interfaces de usuario interactivas y responsivas utilizando React.js y Next.js, mejorando la experiencia de usuario en un 35% según métricas de Google Analytics.</li>
+                            <li data-i18n="work.professional.bullet2">Optimización del rendimiento frontend, logrando reducir el tiempo de carga en un 45% mediante técnicas como code-splitting y lazy loading.</li>
+                            <li data-i18n="work.professional.bullet3">Implementación de pruebas unitarias y de integración con Jest y Testing Library, alcanzando una cobertura del 85% en componentes críticos.</li>
                         </ul>
                     </div>
                 </article>
@@ -535,18 +567,20 @@
                             </div>
                             <div class="experience-heading">
                                 <h3 class="experience-company">Ivitec</h3>
-                                <p class="experience-role">Desarrollador Fullstack</p>
+                                <p class="experience-role" data-i18n="work.ivitec.role">Desarrollador Fullstack</p>
                                 <div class="experience-meta">
+                                    <span class="experience-remote" data-i18n="work.remote">Remoto</span>
+                                    <span class="experience-sep">•</span>
                                     <span class="experience-location">Guadalajara, México</span>
                                     <span class="experience-sep">•</span>
-                                    <time class="experience-date">Julio 2025 — Enero 2026</time>
+                                    <time class="experience-date" data-i18n="work.ivitec.date">Julio 2025 — Enero 2026</time>
                                 </div>
                             </div>
                         </header>
                         <ul class="experience-bullets">
-                            <li>Diseñé y ejecuté pruebas automatizadas para garantizar la calidad del software (QA), asegurando la estabilidad de los entregables antes del despliegue.</li>
-                            <li>Resolví incidencias técnicas y bugs reportados por los usuarios finales, optimizando la operatividad del sistema y mejorando la experiencia de uso.</li>
-                            <li>Desarrollé y mantuve funcionalidades utilizando un stack tecnológico compuesto por Laravel, MySQL, JavaScript y Python.</li>
+                            <li data-i18n="work.ivitec.bullet1">Diseñé y ejecuté pruebas automatizadas para garantizar la calidad del software (QA), asegurando la estabilidad de los entregables antes del despliegue.</li>
+                            <li data-i18n="work.ivitec.bullet2">Resolví incidencias técnicas y bugs reportados por los usuarios finales, optimizando la operatividad del sistema y mejorando la experiencia de uso.</li>
+                            <li data-i18n="work.ivitec.bullet3">Desarrollé y mantuve funcionalidades utilizando un stack tecnológico compuesto por Laravel, MySQL, JavaScript y Python.</li>
                         </ul>
                     </div>
                 </article>
@@ -560,18 +594,18 @@
                             </div>
                             <div class="experience-heading">
                                 <h3 class="experience-company">Conviasa</h3>
-                                <p class="experience-role">Pasante Área desarrollo</p>
+                                <p class="experience-role" data-i18n="work.conviasa.role">Pasante Área desarrollo</p>
                                 <div class="experience-meta">
                                     <span class="experience-location">Vargas, Venezuela</span>
                                     <span class="experience-sep">•</span>
-                                    <time class="experience-date">Abril 2025 — Junio 2025</time>
+                                    <time class="experience-date" data-i18n="work.conviasa.date">Abril 2025 — Junio 2025</time>
                                 </div>
                             </div>
                         </header>
                         <ul class="experience-bullets">
-                            <li>Optimicé el rendimiento y la estabilidad de 2 sistemas web de facturación electrónica, resolviendo más de 30 errores críticos relacionados con la validación de datos.</li>
-                            <li>Diseñé e implementé interfaces de usuario modernas para 4 nuevos módulos de gestión, mejorando la usabilidad y reduciendo el tiempo de carga en un 20%.</li>
-                            <li>Mejoré la arquitectura de bases de datos para soportar cientos de transacciones diarias, garantizando integridad y seguridad de la información.</li>
+                            <li data-i18n="work.conviasa.bullet1">Optimicé el rendimiento y la estabilidad de 2 sistemas web de facturación electrónica, resolviendo más de 30 errores críticos relacionados con la validación de datos.</li>
+                            <li data-i18n="work.conviasa.bullet2">Diseñé e implementé interfaces de usuario modernas para 4 nuevos módulos de gestión, mejorando la usabilidad y reduciendo el tiempo de carga en un 20%.</li>
+                            <li data-i18n="work.conviasa.bullet3">Mejoré la arquitectura de bases de datos para soportar cientos de transacciones diarias, garantizando integridad y seguridad de la información.</li>
                         </ul>
                     </div>
                 </article>
@@ -579,19 +613,19 @@
         </section>
 
         <section id="contact" class="content-section">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-lead">Si tienes alguna pregunta o quieres colaborar, no dudes en dejarme un mensaje.</p>
+            <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+            <p class="section-lead" data-i18n="contact.lead">Si tienes alguna pregunta o quieres colaborar, no dudes en dejarme un mensaje.</p>
             <form id="contact-form" class="contact-form">
                 <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <input type="text" id="name" name="name" placeholder="Nombre" data-i18n-placeholder="contact.namePlaceholder" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" data-i18n-placeholder="contact.emailPlaceholder" required>
                 </div>
                 <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                    <textarea id="message" name="message" placeholder="Mensaje" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary" data-i18n="contact.sendButton">Enviar</button>
             </form>
         </section>
     </main>
@@ -602,11 +636,12 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-copyright">
-                <small>Copyright &copy; Moises Rodriguez <span id="current-year"></span> Todos los derechos reservados</small>
+                <small data-i18n="footer.copyright">Copyright &copy; Moises Rodriguez <span id="current-year"></span> Todos los derechos reservados</small>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 
