@@ -105,6 +105,16 @@ const translations = {
             suptrima: {
                 role: "Desarrollador Web",
                 date: "Enero 2026 — Actualidad",
+                subroles: {
+                    maturin: {
+                        name: "Superintendencia de Maturín",
+                        role: "Desarrollador Fullstack"
+                    },
+                    anaco: {
+                        name: "Superintendencia de Anaco",
+                        role: "Desarrollador Fullstack"
+                    }
+                },
                 bullet1: "Desarrollo de dashboards interactivos para la visualización de datos tributarios y administrativos.",
                 bullet2: "Identificación y resolución de bugs críticos en diversos sistemas municipales, asegurando la estabilidad operativa.",
                 bullet3: "Implementación de validaciones robustas y medidas de seguridad en formularios y procesos de recolección de datos."
@@ -226,8 +236,17 @@ const translations = {
             },
             suptrima: {
                 role: "Web Developer",
-                
                 date: "january 2026 — Present",
+                subroles: {
+                    maturin: {
+                        name: "Superintendencia de Maturín",
+                        role: "Fullstack Developer"
+                    },
+                    anaco: {
+                        name: "Superintendencia de Anaco",
+                        role: "Fullstack Developer"
+                    }
+                },
                 bullet1: "Development of interactive dashboards for the visualization of tax and administrative data.",
                 bullet2: "Identification and resolution of critical bugs in various municipal systems, ensuring operational stability.",
                 bullet3: "Implementation of robust validations and security measures in forms and data collection processes."
